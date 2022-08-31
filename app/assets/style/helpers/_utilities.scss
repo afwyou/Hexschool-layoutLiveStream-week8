@@ -138,6 +138,7 @@ $utilities: map-merge(
     "width": (
       property: width,
       class: w,
+      responsive:true,
       values: (
         25: 25%,
         50: 50%,
@@ -435,6 +436,7 @@ $utilities: map-merge(
       rfs: true,
       property: font-size,
       class: fs,
+      responsive : true,
       values: $font-sizes
     ),
     "font-style": (
