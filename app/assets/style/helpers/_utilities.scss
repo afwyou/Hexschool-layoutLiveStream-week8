@@ -87,6 +87,7 @@ $utilities: map-merge(
     // scss-docs-start utils-borders
     "border": (
       property: border,
+      responsive:true,
       values: (
         null: $border-width solid $border-color,
         0: 0,
@@ -94,6 +95,7 @@ $utilities: map-merge(
     ),
     "border-top": (
       property: border-top,
+      responsive:true,
       values: (
         null: $border-width solid $border-color,
         0: 0,
@@ -102,6 +104,7 @@ $utilities: map-merge(
     "border-end": (
       property: border-right,
       class: border-end,
+      responsive:true,
       values: (
         null: $border-width solid $border-color,
         0: 0,
@@ -109,6 +112,7 @@ $utilities: map-merge(
     ),
     "border-bottom": (
       property: border-bottom,
+      responsive:true,
       values: (
         null: $border-width solid $border-color,
         0: 0,
@@ -117,8 +121,9 @@ $utilities: map-merge(
     "border-start": (
       property: border-left,
       class: border-start,
+      responsive:true,
       values: (
-        null: $border-width solid $border-color,
+        null: $border-width solid $black,
         0: 0,
       )
     ),
@@ -520,6 +525,7 @@ $utilities: map-merge(
     "background-color": (
       property: background-color,
       class: bg,
+      responsive:true,
       values: map-merge(
         $theme-colors,
         (

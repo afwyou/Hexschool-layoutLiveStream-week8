@@ -78,3 +78,9 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin text-gradient-color {
+  // background: linear-gradient(to bottom, #09ACF5, #62DB54);
+  background-clip: text;
+  color: transparent;
+}

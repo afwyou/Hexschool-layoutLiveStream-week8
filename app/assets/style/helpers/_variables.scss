@@ -228,7 +228,7 @@ $enable-grid-classes:         true !default;
 $enable-button-pointers:      true !default;
 $enable-rfs:                  true !default;
 $enable-validation-icons:     true !default;
-$enable-negative-margins:     false !default;
+$enable-negative-margins:     true !default;
 $enable-deprecation-messages: true !default;
 $enable-important-utilities:  true !default;
 
@@ -349,11 +349,11 @@ $grid-breakpoints: (
 
 // scss-docs-start container-max-widths
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
+  sm: 360px,
+  md: 360px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1320px
+  xxl: 1440px
 ) !default;
 // scss-docs-end container-max-widths
 

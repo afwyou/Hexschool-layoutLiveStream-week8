@@ -1,0 +1,14 @@
+
+
+  .nav-button {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    @include desktop{
+      padding-top: 48px !important;
+      padding-bottom: 48px !important;
+
+    }
+     padding-left: 40px !important;
+     padding-right: 40px !important;
+     text-align: center;
+  }

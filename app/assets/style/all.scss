@@ -5,4 +5,8 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 
-@import './layout/index.scss'
+@import "./helpers/base";
+@import "./helpers/components/banner";
+@import "./helpers/components/swiper";
+@import "./helpers/components/nav-button";
+@import './layout/index.scss';
