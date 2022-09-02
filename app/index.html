@@ -5,54 +5,75 @@ engine: ejs
 current: index
 ---
 
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div class="bg-primary pt-md-10">
+  <div class="container banner pb-10 pb-md-20">
+    <div class="row g-0">
+      <div class="col-md-1 d-none d-md-flex flex-column align-items-center bg-black pt-15 position-relative ">
+        <p style="transform: rotate(90deg); width: fit-content;" class="fw-bold fs-2 text-white mt-8">
+          Recommend</p>
+        <span class="fs-5 fw-bold text-white align-middle d-inline-block mt-22">推<br>薦<br>系<br>列</span>
       </div>
-      <div class="modal-body">
-        ...
+
+      <div class="col-md-11 border-bottom border-2 border-md-1 border-end-md border-top-md border-black">
+        <div class="card border-0 rounded-0">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <img src="./assets/images/art01.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-4">
+              <div class="card-body p-md-6 h-100 d-flex flex-column">
+                <small class="text-black mt-16 d-block fw-border fs-nft">Kemus Wu</small>
+                <h5 class="card-title fw-bold fs-1 mb-6">瞳孔:流動的脈絡</h5>
+                <p class="card-text">眼睛，總是吸引著我們的注意力，看、被看，也許眼睛裡有著從另一個世界看我們的世界。</p>
+                <button
+                  class="btn btn-outline-black rounded-0 d-block ms-auto mt-auto more-button py-2 px-12">MORE</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+
+      <div class="col-md-6 border-start-md border-black border-bottom border-2 border-md-1">
+        <div class="card">
+          <div class="row g-0 flex-md-row-reverse">
+            <div class="col-md-6">
+              <img src="./assets/images/art02.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body px-md-6 py-6 d-flex flex-column h-100">
+                <small class="text-muted mb-2 mt-2 mt-md-6 d-block">Joanne</small>
+                <h5 class="card-title mb-6 fs-3 fw-bold">海洋波度</h5>
+                <p class="card-text fs-6">海洋的奧秘向我們揭示了深不可測的一面，它的深度——反映了我們的恐懼、同時也吸引著我們。</p>
+                <button
+                  class="btn btn-outline-black rounded-0 d-block ms-auto mt-auto more-button py-2 px-12">MORE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 border-end-md border-start-md border-black border-bottom border-2 border-md-1">
+        <div class="card">
+          <div class="row g-0 flex-md-row-reverse">
+            <div class="col-md-6">
+              <img src="./assets/images/art02.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body px-md-6 py-6 d-flex flex-column h-100">
+                <small class="text-muted mb-2 mt-2 mt-md-6 d-block">Michael</small>
+                <h5 class="card-title mb-6 fs-3 fw-bold">我家窗前的鳥</h5>
+                <p class="card-text fs-6">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+                <button
+                  class="btn btn-outline-black rounded-0 d-block ms-auto mt-auto more-button py-2 px-12">MORE</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
+
+
+
 </div>

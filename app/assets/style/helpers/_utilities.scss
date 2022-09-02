@@ -135,6 +135,7 @@ $utilities: map-merge(
     "border-width": (
       property: border-width,
       class: border,
+      responsive:true,
       values: $border-widths
     ),
     // scss-docs-end utils-borders

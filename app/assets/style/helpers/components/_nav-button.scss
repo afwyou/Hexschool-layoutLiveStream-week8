@@ -12,3 +12,23 @@
      padding-right: 40px !important;
      text-align: center;
   }
+
+  .more-button{
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-top: 16px solid transparent;
+      border-right: 16px solid $button;
+      z-index: 2;
+      // display: none;
+    }
+    &:hover{
+      background: $button;
+      &::after{
+        border-right: 16px solid $black;
+      }
+    }
+  }
