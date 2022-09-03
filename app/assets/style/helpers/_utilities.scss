@@ -438,6 +438,11 @@ $utilities: map-merge(
       class: font,
       values: (monospace: var(--#{$variable-prefix}font-monospace))
     ),
+    "font-family": (
+      property: font-family,
+      class: font-paytone,
+      values: ('Paytone One', cursive)
+    ),
     "font-size": (
       rfs: true,
       property: font-size,
@@ -604,3 +609,4 @@ $utilities: map-merge(
   ),
   $utilities
 );
+
