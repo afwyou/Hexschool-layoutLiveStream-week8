@@ -1,10 +1,57 @@
----
-title: Boostrap Index
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boostrap Index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Paytone+One&family=Squada+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" src="./assets/style/all.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary border-bottom border-black py-0">
+  <div class="container">
+    <a class="navbar-brand " href="#" style="width:190px">
+      <img src="./assets/images/logo/logo.svg" alt="" class="w-50 w-lg-75 w-xxl-100">
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars text-black fs-3"></i>
+      
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+
+      <form class="d-lg-flex ms-auto py-10 px-12 border-start border-black d-none">
+        <input class="form-control bg-primary border-0 d-none d-md-block " type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search" style="width:288px">
+        
+        <button class="btn " type="submit">
+         <i class="fas fa-search fs-4"></i>
+        </button>
+      </form>
+
+      <ul class="navbar-nav bg-white bg-lg-primary mx-n3 px-3 px-lg-0 pb-9 pb-lg-0">
+        <li class="nav-item border-bottom border-bottom-lg-0 border-start-lg border-black ">
+          <a class="nav-link active nav-button" aria-current="page" href="#">探索</a>
+        </li>
+        <li class="nav-item border-start-lg border-black">
+          <a class="nav-link active nav-button " aria-current="page" href="#">市值</a>
+        </li>
+        <li class="nav-item  border-start-lg border-black bg-button bg-lg-primary border border-lg-0 ">
+          <a class="nav-link  py-3 py-lg-12 ps-lg-12 text-center" aria-current="page" href="#">
+            <i class="fas fa-wallet fs-4 d-none d-lg-inline-block"></i>
+            <p class="text-white text-center d-lg-none">連結錢包</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    
 <div class="bg-primary pt-md-10">
   <div class="container banner pb-10 pb-md-20">
     <div class="row g-0">
@@ -76,15 +123,15 @@ current: index
 
   <!-- 市場排行榜 -->
   <div class="container ranking">
-    <div class="position-relative pb-2 pb-md-4 border-bottom border-black">
+    <div class="position-relative pb-2 pb-md-4 border-bottom border-black mb-6 mb-md-12">
       <h2 class="">Ranking <span class="fw-bold">市價排行榜</span></h2>
       <button class="btn more-button button-title py-2 px-12 fs-nft">more</button>
 
     </div>
 
 
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
+    <div class="row row-cols-1 row-cols-lg-3 ">
+      <div class="col ">
         <div class="card h-100 border border-black rounded-0">
           <div class="number fs-2 fw-bold font-paytone">1</div>
           <img src="./assets/images/art04.jpg" class="card-img-top" alt="...">
@@ -102,21 +149,26 @@ current: index
       </div>
 
       <div class="col">
-        <div class="card h-100 border border-black rounded-0">
-          <a href="#" class="d-block text-black img-hover">
+        <div class="card h-100 border border-black rounded-0 d-flex flex-row d-lg-block">
+
+          <a href="" class="d-flex flex-row d-lg-block text-black img-hover">
             <div class="number fs-2 fw-bold font-paytone">2</div>
             <img src="./assets/images/art05.jpg" class="card-img-top " alt="...">
-            <button class="btn btn-outline-black rounded-0 d-block ms-auto mt-auto more-button py-2 px-12">MORE</button>
+            <button
+              class="btn btn-outline-black rounded-0 d-block ms-auto mt-auto more-button py-2 px-12 d-none">MORE</button>
           </a>
-          <div class="card-body border-top border-black">
-            <h5 class="card-title mb-0 ">
-              爆炸頭的母親
-            </h5>
-          </div>
-          <div class="card-footer d-flex justify-content-between bg-white border-black">
-            <small class="text-black">Yui</small>
-            <small>
-              <img src="./assets/images/ethereum.svg" alt="" width="9" height="17" class="me-2">300</small>
+
+          <div>
+            <div class="card-body border-top border-black">
+              <h5 class="card-title mb-0 ">
+                爆炸頭的母親
+              </h5>
+            </div>
+            <div class="card-footer d-flex justify-content-between bg-white border-black">
+              <small class="text-black">Yui</small>
+              <small>
+                <img src="./assets/images/ethereum.svg" alt="" width="9" height="17" class="me-2">300</small>
+            </div>
           </div>
         </div>
       </div>
@@ -144,3 +196,14 @@ current: index
 
 
 </div>
+
+    <footer class="footer bg-primary border-top  border-black">
+      <hr size="6"  style="color:black; opacity:1" class="mt-2 mb-0">
+      <p class="fs-6 text-center py-6 ">© ART NFT. All Rights Reserved</p>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
