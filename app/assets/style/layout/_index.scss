@@ -29,12 +29,10 @@
     }
     .img-hover {
       position: relative;
-      width: 666px;
-      border: 10px solid red;
       // background-color: #000;
       &:hover {
         &::after {
-          content: 'more';
+          content: '';
           position: absolute;
           top: 0;
           right: 0;
