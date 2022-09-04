@@ -2,8 +2,8 @@
 .ranking{
   .card{
     position: relative;
-    .card-img-top{
-      height: 100%;
+    .ranking-card-img{
+      height: 91px;
       width: 87px;
       border-left: 1px solid black;
       border-right: 1px solid black;
@@ -12,6 +12,14 @@
         width: 100%;
         border: none;
       }
+        object-fit: cover;
+        object-position: top;
+    }
+    .ranking-card-img-s{
+      height: 91px;
+      width: 87px;
+      border-left: 1px solid black;
+      border-right: 1px solid black;
         object-fit: cover;
         object-position: top;
     }
@@ -33,6 +41,15 @@
         left: 0;
       }
     }
+    .number-s{
+      vertical-align: middle;
+      text-align: center;
+      width: 38px;
+      height: 100%;
+      line-height: 91px;
+      background:white;
+      flex-shrink: 0;
+    }
     .img-hover {
       position: relative;
       // background-color: #000;
@@ -50,6 +67,45 @@
           display: flex;
           justify-content: center;
           align-items: center;
+        }
+        & button{
+          display: block !important;
+          position: absolute;
+          // background: $button;
+          right: 0;
+          bottom: 0;
+          // background: white;
+          z-index: 10;
+        }
+        
+      }
+    }
+    .img-hover-s {
+      position: relative;
+      // background-color: #000;
+      &:hover {
+        &::after {
+          content: 'more';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color: black;
+          opacity: 0.8;
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        &::before{
+          content: '';
+          position: absolute;
+          border-top: 16px solid transparent;
+          border-right: 16px solid $button;
+          bottom: 0;
+          right: 0;
+          z-index: 1;
         }
         
       }
