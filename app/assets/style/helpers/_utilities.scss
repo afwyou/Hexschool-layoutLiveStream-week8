@@ -433,15 +433,19 @@ $utilities: map-merge(
     // scss-docs-end utils-spacing
     // Text
     // scss-docs-start utils-text
+    "font-paytone": (
+      property: font-family,
+      class: paytone,
+      values: ('Paytone One', cursive)
+      // 不知道哪個寫法正確
+      // values: ('Paytone One', cursive)
+      // values: 'Paytone One', 
+      // values: 'Paytone One', cursive;
+    ),
     "font-family": (
       property: font-family,
       class: font,
       values: (monospace: var(--#{$variable-prefix}font-monospace))
-    ),
-    "font-family": (
-      property: font-family,
-      class: font-paytone,
-      values: ('Paytone One', cursive)
     ),
     "font-size": (
       rfs: true,
