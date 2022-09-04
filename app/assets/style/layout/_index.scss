@@ -3,9 +3,14 @@
   .card{
     position: relative;
     .card-img-top{
-      height: 900px;
+      height: 100%;
+      width: 87px;
+      border-left: 1px solid black;
+      border-right: 1px solid black;
       @include desktop{
         height: 374px;
+        width: 100%;
+        border: none;
       }
         object-fit: cover;
         object-position: top;
@@ -13,12 +18,13 @@
     .number{
       vertical-align: middle;
       text-align: center;
-      width: 54px;
-      height: 91px;
+      width: 38px;
+      height: 100%;
       line-height: 91px;
       background:white;
-      border: 1px solid black;
+      flex-shrink: 0;
       @include desktop{
+        border: 1px solid black;
         line-height: 64px;
         width: 64px;
         height: 64px;
