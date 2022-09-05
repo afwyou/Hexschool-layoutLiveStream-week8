@@ -4,8 +4,20 @@ $(function () {
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  direction: 'vertical',
-  loop: true,
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 500,
+    modifier: 1,
+    slideShadows: false,
+  },
+
+
+
 
   // If we need pagination
   pagination: {

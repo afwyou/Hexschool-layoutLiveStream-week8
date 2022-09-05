@@ -116,6 +116,31 @@
 
 
 .swiper {
-  width: 600px;
-  height: 300px;
-}
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+.swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 636px;
+        height: 439px;
+        @include flex-center
+        &-active{
+          img{
+            width: 636px !important; 
+            height: 439px !important;
+          }
+        }
+      }
+
+      .swiper-slide img {
+        display: block;
+        // width: 100%;
+        width: 306px;
+        height: 262px;
+        // align-items: center;
+        vertical-align: middle;
+        margin: 0 auto;
+      }
