@@ -523,6 +523,7 @@ $utilities: map-merge(
     "background-color": (
       property: background-color,
       class: bg,
+      responsive:true,
       values: map-merge(
         $theme-colors,
         (
