@@ -4,6 +4,7 @@ $(function () {
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
+  slidesPerView: 3,//套用在coverflow沒有用
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,

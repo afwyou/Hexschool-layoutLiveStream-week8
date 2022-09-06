@@ -120,8 +120,8 @@
   @include desktop{
     width: 100%;
   }
-  padding-top: 50px;
-  padding-bottom: 50px;
+  // padding-top: 50px;
+  // padding-bottom: 50px;
 }
 
 .swiper-slide {
@@ -208,6 +208,7 @@
      background-color: $black;
      // 才會有bullet色彩
      opacity: initial;
+     border-radius: 0% !important;
      &-active {
     // active的樣式，才會有拉長的效果
       background-color: $button;
