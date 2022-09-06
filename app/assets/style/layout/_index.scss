@@ -143,6 +143,7 @@
       display: block !important;
       width: 336px !important; 
       height: 232px !important;
+      filter: unset !important;
       @include desktop {
         width: 636px !important;
         height: 439px !important;
@@ -156,6 +157,8 @@
     display: none;
     width: 306px;
     height: 262px;
+    object-fit: cover;
+    filter: grayscale(90%);
     // margin-left: auto;
     // margin-right: 24px;
     @include desktop{

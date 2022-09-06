@@ -254,9 +254,17 @@ current: index
         <!-- 如果使用bgi會導致slide需要不同的大小，就會導致水平軸出現偏移 -->
         <div class="swiper mySwiper">
           <div class="swiper-wrapper mb-6 mb-lg-12">
-            <div class="swiper-slide ">
-              <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            <div class="swiper-slide d-flex flex-wrap">
+              <div class="position-relative">
+                <img src="./assets/images/artist01.jpg" />
+                <h4 class="swiper-slide-artist text-white fs-2 fs-lg-artist fw-bold">Antony Wu</h4>
+                <button
+                  class="btn btn-outline-black d-block ms-auto mt-auto more-button py-2 px-12 swiper-slide-btn">MORE</button>
+              </div>
+
+              <p class="swiper-slide-words p-6 ">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
             </div>
+
             <div class="swiper-slide d-flex flex-wrap">
               <div class="position-relative">
                 <img src="./assets/images/artist02.jpg" />
@@ -267,8 +275,16 @@ current: index
 
               <p class="swiper-slide-words p-6 ">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
             </div>
-            <div class="swiper-slide ">
-              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+
+            <div class="swiper-slide d-flex flex-wrap">
+              <div class="position-relative">
+                <img src="./assets/images/artist03.jpg" />
+                <h4 class="swiper-slide-artist text-white fs-2 fs-lg-artist fw-bold">Antony Wu</h4>
+                <button
+                  class="btn btn-outline-black d-block ms-auto mt-auto more-button py-2 px-12 swiper-slide-btn">MORE</button>
+              </div>
+
+              <p class="swiper-slide-words p-6 ">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
             </div>
           </div>
           <div class="swiper-pagination"></div>
