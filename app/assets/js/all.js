@@ -11,6 +11,7 @@ const swiper = new Swiper('.swiper', {
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
+    //會造成手機版畫面slide重疊
     depth: 500,
     modifier: 1,
     slideShadows: false,

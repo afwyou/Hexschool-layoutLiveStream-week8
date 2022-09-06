@@ -116,31 +116,100 @@
 
 
 .swiper {
-        width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-      }
+  width: 336px;
+  @include desktop{
+    width: 100%;
+  }
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
 .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 636px;
-        height: 439px;
-        @include flex-center
-        &-active{
-          img{
-            width: 636px !important; 
-            height: 439px !important;
-          }
-        }
-      }
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  // flex-shrink: 1;
+  @include flex-center;
+  @include desktop{
+    width: 636px;
+    height: 439px;
 
-      .swiper-slide img {
-        display: block;
-        // width: 100%;
-        width: 306px;
-        height: 262px;
-        // align-items: center;
-        vertical-align: middle;
-        margin: 0 auto;
+  }
+
+  &-active{
+    // flex-shrink: 0;
+    img{
+      display: block !important;
+      width: 336px !important; 
+      height: 232px !important;
+      @include desktop {
+        width: 636px !important;
+        height: 439px !important;
       }
+    }
+    .swiper-slide-words, .swiper-slide-btn, .swiper-slide-artist {
+      display: block !important;
+    }
+  }
+  & img {
+    display: none;
+    width: 306px;
+    height: 262px;
+    // margin-left: auto;
+    // margin-right: 24px;
+    @include desktop{
+      display: block;
+   }
+  }
+  &-artist{
+    display: none;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    @include desktop{
+      width: 258px;
+    }
+  }
+  &-btn{
+    display: none !important;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    background: white;
+    @include desktop{
+      right: 24px;
+      bottom: 24px;
+    }
+  }
+  &-words{
+    display: none;
+    bottom: 24px;
+    left: 24px;
+    font-size: 16px;
+    background: white;
+    opacity: 0.8;
+    width: 336px;
+    margin-top: 16px;
+    @include desktop{
+      position: absolute;
+      width: 307px;
+    }
+  }
+}
+
+  .swiper-pagination {
+    position: unset;
+    width: auto !important;
+    .swiper-pagination-bullet {
+     background-color: $black;
+     // 才會有bullet色彩
+     opacity: initial;
+     &-active {
+    // active的樣式，才會有拉長的效果
+      background-color: $button;
+      width: 16px;
+      // border-radius: 100px;//不知道這裡要幹嘛
+      }
+     }
+  }
