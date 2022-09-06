@@ -201,7 +201,7 @@
   }
 }
 
-  .swiper-pagination {
+.swiper-pagination {
     position: unset;
     width: auto !important;
     .swiper-pagination-bullet {
@@ -217,3 +217,43 @@
       }
      }
   }
+
+
+
+.artwork{
+
+  .img-hover {
+      position: relative;
+      // background-color: #000;
+      &:hover {
+        img{
+          filter: brightness(0.4);
+        }
+        .hover-content-container{
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          padding: 40px !important;
+          display: flex !important;
+          z-index: 3;
+        }
+        .hover-content{
+          border: 1px solid white;
+          padding: 16px;
+        }
+       
+        & button{
+          display: block !important;
+          // position: absolute;
+          // background: $button;
+          // right: 0;
+          // bottom: 0;
+          // background: white;
+          // z-index: 10;
+        }
+        
+      }
+    }
+}

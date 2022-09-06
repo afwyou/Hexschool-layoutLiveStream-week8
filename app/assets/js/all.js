@@ -37,3 +37,8 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
+
+
+$('.artwork .row').imagesLoaded().progress(function () {
+  $('.artwork .row').masonry(); // 渲染整體畫面
+});
