@@ -159,6 +159,8 @@ $utilities: map-merge(
         150: 150%,
         auto: auto,
         'circle': 60px,
+        'artist-desktop': 416px,
+        'artist-mobile': 336px,
       )
     ),
     "max-width": (
@@ -200,6 +202,8 @@ $utilities: map-merge(
         "lg": 445px,
         "mobile": 340px,
         "desktop": 372px,
+        "artist-desktop": 264px,
+        "artist-mobile": 213px,
       )
     ),
     "max-height": (
