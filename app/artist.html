@@ -6,19 +6,19 @@ current: artist
 ---
 
 <div class="bg-primary pt-6 pt-lg-10 pb-10 pb-lg-20">
-  <div class="container">
+  <div class="container mb-10">
     <div class="row">
 
       <div class="col-lg-8 ">
 
         <div class="card mb-3">
           <div class="row g-0">
-            <div class="col-md-5">
+            <div class="col-lg-5">
               <img src="./assets/images/artist01.jpg"
-                class="img-fluid rounded-start w-lg-artist-desktop h-lg-artist-desktop w-artist-mobile h-artist-mobile"
+                class="img-fluid rounded-start w-lg-artist-desktop h-lg-artist-desktop w-artist-mobile h-artist-mobile object-cover"
                 alt="...">
             </div>
-            <div class="col-md-7 border">
+            <div class="col-lg-7 border">
               <div class="card-body p-4 p-lg-6">
                 <div class="d-flex w-100 justify-content-between">
                   <h1 class="fs-2 fs-lg-lg fw-bold mb-2 mb-lg-4 ">Michael</h1>
@@ -70,6 +70,129 @@ current: artist
           <span class="fs-2" style="line-height: 34px;">23.1 ETH</span>
         </li>
       </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <ul class="nav nav-tabs " id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active bg-primary text-black fs-2  fs-lg-lg" id="home-tab" data-bs-toggle="tab"
+          data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Art Works <span
+            class="fw-bold fs-5 d-none d-lg-inline">系列作品</span></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link bg-primary text-black fs-2 fs-lg-lg" id="profile-tab" data-bs-toggle="tab"
+          data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+          aria-selected="false">Collection<span class="fw-bold fs-5 d-none d-lg-inline">收藏品</span></button>
+      </li>
+    </ul>
+
+    <div class="tab-content " id="myTabContent">
+
+
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="py-8 pb-lg-0 pt-lg-12 bg-white px-4 px-lg-0 triangle border mb-22">
+          <div class="row d-flex justify-content-center ">
+            <div class="col-lg-10 px-lg-0">
+
+              <h2 class="fs-4 fw-bold mb-4">追求者送我的花</h2>
+              <div class="d-lg-flex align-items-center justify-content-between">
+                <p class="fs-6 d-inline-block w-100 w-lg-80 fw-light mb-6 mb-lg-0">
+                  我又沒有特別喜歡花，為什麼不給我現金就好，擺在那也不知道要幹嘛，只好畫起來看有沒有人要買，阿不然如果真的喜歡我，把這些都買回去八。</p>
+                <button class="btn btn-outline-black d-none d-lg-inline-block more-button py-2 px-12 ">MORE</button>
+              </div>
+              <!-- 圖畫展示區 -->
+              <div class="artworks row d-flex justify-content-center g-2 ">
+                <div class="artwork col-lg-3 ">
+                  <img src="./assets/images/art13.jpg" alt=""
+                    class="border border-10 w-100 object-cover h-artwork-mobile h-lg-artwork-desktop">
+                  <button
+                    class="btn btn-outline-black d-lg-none d-block mx-auto more-button mt-4 py-2 px-12 ">MORE</button>
+                </div>
+
+                <div class="artwork col-lg-3 d-none d-lg-block">
+                  <img src="./assets/images/art30.jpeg" alt=""
+                    class="border border-10 w-100 object-cover h-artwork-mobile h-lg-artwork-desktop">
+                  <button
+                    class="btn btn-outline-black d-lg-none d-block mx-auto more-button mt-4 py-2 px-12 ">MORE</button>
+                </div>
+
+                <div class="artwork col-lg-3 d-none d-lg-block">
+                  <img src="./assets/images/art14.jpg" alt=""
+                    class="border border-10 w-100 object-cover h-artwork-mobile h-lg-artwork-desktop">
+                  <button
+                    class="btn btn-outline-black d-lg-none d-block mx-auto more-button mt-4 py-2 px-12 ">MORE</button>
+                </div>
+
+                <div class="artwork col-lg-3 d-none d-lg-block">
+                  <img src="./assets/images/art13.jpg" alt=""
+                    class="border border-10 w-100 object-cover h-artwork-mobile h-lg-artwork-desktop">
+                  <button
+                    class="btn btn-outline-black d-lg-none d-block mx-auto more-button mt-4 py-2 px-12 ">MORE</button>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="py-8 pb-lg-0 pt-lg-12 bg-white px-4 px-lg-0 triangle border">
+          <div class="row d-flex justify-content-center ">
+            <div class="col-lg-10 px-lg-0">
+
+              <h2 class="fs-4 fw-bold mb-4">我家窗前的鳥</h2>
+              <div class="d-lg-flex align-items-center justify-content-between">
+                <p class="fs-6 d-inline-block w-100 w-lg-80 fw-light mb-6 mb-lg-0">
+                  家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+                <button class="btn btn-outline-black d-none d-lg-inline-block more-button py-2 px-12 ">MORE</button>
+              </div>
+              <!-- 圖畫展示區 -->
+              <div class="artworks row d-flex justify-content-center g-2 ">
+                <div class="artwork col-lg-3 ">
+                  <img src="./assets/images/art27.jpg" alt=""
+                    class="border border-10 w-100 object-cover h-artwork-mobile h-lg-artwork-desktop">
+                  <button
+                    class="btn btn-outline-black d-lg-none d-block mx-auto more-button mt-4 py-2 px-12 ">MORE</button>
+                </div>
+
+                <div class="artwork col-lg-3 d-none d-lg-block">
+                  <img src="./assets/images/art20.jpg" alt=""
+                    class="border border-10 w-100 object-cover h-artwork-mobile h-lg-artwork-desktop">
+                  <button
+                    class="btn btn-outline-black d-lg-none d-block mx-auto more-button mt-4 py-2 px-12 ">MORE</button>
+                </div>
+
+                <div class="artwork col-lg-3 d-none d-lg-block">
+                  <img src="./assets/images/art26.jpg" alt=""
+                    class="border border-10 w-100 object-cover h-artwork-mobile h-lg-artwork-desktop">
+                  <button
+                    class="btn btn-outline-black d-lg-none d-block mx-auto more-button mt-4 py-2 px-12 ">MORE</button>
+                </div>
+
+                <div class="artwork col-lg-3 d-none d-lg-block">
+                  <img src="./assets/images/art22.jpg" alt=""
+                    class="border border-10 w-100 object-cover h-artwork-mobile h-lg-artwork-desktop">
+                  <button
+                    class="btn btn-outline-black d-lg-none d-block mx-auto more-button mt-4 py-2 px-12 ">MORE</button>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
     </div>
   </div>
 

@@ -1,0 +1,10 @@
+.artworks{
+  // position: relative;
+  .artwork{
+    @include desktop{
+     position: relative;
+     top: 48px;
+    }
+    
+  }
+}
