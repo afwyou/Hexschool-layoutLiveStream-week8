@@ -8,3 +8,15 @@
     
   }
 }
+
+.nav-tabs{
+  border-bottom: 1px solid black;
+  .nav-link{
+    border-bottom: 1px solid black;
+  }
+  .nav-link.active{
+   border-left: 1px solid black;
+   border-top: 1px solid black;
+   border-right: 1px solid black;
+  }
+}
