@@ -42,3 +42,8 @@ const swiper = new Swiper('.swiper', {
 $('.artwork .row').imagesLoaded().progress(function () {
   $('.artwork .row').masonry(); // 渲染整體畫面
 });
+
+
+// $('.masonry .row').imagesLoaded().progress(function () {
+//   $('.masonry .row').masonry(); // 渲染整體畫面
+// });
