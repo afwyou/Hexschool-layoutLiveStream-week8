@@ -10,108 +10,128 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Paytone+One&family=Squada+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" src="./assets/style/all.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary border-bottom border-black py-0">
-  <div class="container">
-    <a class="navbar-brand " href="#" style="width:190px">
-      <img src="./assets/images/logo/logo.svg" alt="" class="w-50 w-lg-75 w-xxl-100">
-    </a>
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars text-black fs-3"></i>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary border-bottom py-4 py-lg-0">
+
+    <div class="container position-relative">
+    
+      <a class="navbar-brand " href="#" style="width:190px">
+        <img src="./assets/images/logo/logo.svg" alt="" class="w-50 w-lg-75 w-xxl-100">
+      </a>
+
       
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+      <i class="fas fa-search fs-4 d-inline d-lg-none" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"></i>
+      <div class="position-absolute  collapse collapse-horizontal  w-100 h-100" id="collapseWidthExample">
+       <div class="bg-primary  d-inline-block h-100 w-10 d-flex justify-content-center align-items-center ">
+        <i class="fas fa-angle-left me-4 fs-3" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"></i>
+       <input class="w-90 h-100 bg-primary border-0" placeholder="搜尋作品名稱、藝術家名稱">
+       </div>
+       
+       
+       </input>
+      </div>
 
-      <form class="d-lg-flex ms-auto py-10 px-12 border-start border-black d-none">
-        <input class="form-control bg-primary border-0 d-none d-md-block " type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search" style="width:288px">
-        
-        <button class="btn " type="submit">
-         <i class="fas fa-search fs-4"></i>
-        </button>
-      </form>
 
-      <ul class="navbar-nav bg-white bg-lg-primary mx-n3 px-3 px-lg-0 pb-9 pb-lg-0">
-        <li class="nav-item border-bottom border-bottom-lg-0 border-start-lg border-black ">
-          <a class="nav-link active nav-button" aria-current="page" href="#">探索</a>
-        </li>
-        <li class="nav-item border-start-lg border-black">
-          <a class="nav-link active nav-button " aria-current="page" href="#">市值</a>
-        </li>
-        <li class="nav-item  border-start-lg border-black bg-button bg-lg-primary border border-lg-0 ">
-          <a class="nav-link  py-3 py-lg-12 ps-lg-12 text-center" aria-current="page" href="#">
-            <i class="fas fa-wallet fs-4 d-none d-lg-inline-block"></i>
-            <p class="text-white text-center d-lg-none">連結錢包</p>
-          </a>
-        </li>
-      </ul>
+      
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-black fs-3"></i>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+
+        <form class="d-lg-flex ms-auto py-10 px-12 border-start d-none">
+          <input class="form-control bg-primary border-0 d-none d-md-block " type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search" style="width:288px">
+          
+          <button class="btn " type="submit">
+          <i class="fas fa-search fs-4"></i>
+          </button>
+        </form>
+
+        <ul class="navbar-nav bg-white bg-lg-primary mx-n3 px-3 px-lg-0 pb-9 pb-lg-0">
+          <li class="nav-item border-bottom border-bottom-lg-0 bg-white bg-lg-primary border-start-lg ">
+            <a class="nav-link active nav-button" aria-current="page" href="#">探索</a>
+          </li>
+          <li class="nav-item border-start-lg bg-white bg-lg-primary">
+            <a class="nav-link active nav-button " aria-current="page" href="#">市值</a>
+          </li>
+          <li class="nav-item  border-start-lg bg-button bg-lg-primary border border-lg-0 bg-primary">
+            <a class="nav-link  py-3 py-lg-12 ps-lg-12 text-center" aria-current="page" href="#">
+              <i class="fas fa-wallet fs-4 d-none d-lg-inline-block"></i>
+              <p class="text-white text-center d-lg-none">連結錢包</p>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+
+  </nav>
 
     
-<div class="bg-primary pt-md-10">
+<div class="bg-primary pt-lg-10">
   <div class="container banner pb-10 pb-md-20">
     <div class="row g-0">
-      <div class="col-md-1 d-none d-md-flex flex-column align-items-center bg-black pt-15 position-relative ">
+      <div class="col-lg-1 d-none d-lg-flex flex-column align-items-center bg-black pt-15 position-relative ">
         <p style="transform: rotate(90deg); width: fit-content;" class="fw-bold fs-2 text-white mt-8">
           Recommend</p>
         <span class="fs-5 fw-bold text-white align-middle d-inline-block mt-22">推<br>薦<br>系<br>列</span>
       </div>
 
-      <div class="col-md-11 border-bottom border-2 border-md-1 border-end-md border-top-md border-black">
-        <div class="card border-0 rounded-0">
+      <div class="col-lg-11 border-bottom border-2 border-lg-1 border-end-lg border-top-lg">
+        <div class="card border-0">
           <div class="row g-0">
-            <div class="col-md-8">
+            <div class="col-lg-8">
               <img src="./assets/images/art01.jpg" class="img-fluid rounded-start" alt="...">
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
               <div class="card-body p-md-6 h-100 d-flex flex-column">
-                <small class="text-black mt-16 d-block fw-border fs-nft">Kemus Wu</small>
+                <small class="text-black mt-2 mt-lg-16 d-block fw-border fs-nft">Kemus Wu</small>
                 <h5 class="card-title fw-bold fs-1 mb-6">瞳孔:流動的脈絡</h5>
                 <p class="card-text">眼睛，總是吸引著我們的注意力，看、被看，也許眼睛裡有著從另一個世界看我們的世界。</p>
-                <button
-                  class="btn btn-outline-black rounded-0 d-block ms-auto mt-auto more-button py-2 px-12">MORE</button>
+                <button class="btn btn-outline-black d-block ms-auto mt-auto more-button py-2 px-12">MORE</button>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col-md-6 border-start-md border-black border-bottom border-2 border-md-1">
+      <div class="col-lg-6 border-start-lg border-bottom border-2 border-lg-1">
         <div class="card">
-          <div class="row g-0 flex-md-row-reverse">
-            <div class="col-md-6">
-              <img src="./assets/images/art02.jpg" class="img-fluid rounded-start" alt="...">
+          <div class="row g-0 flex-lg-row-reverse">
+            <div class="col-lg-6">
+              <img src="./assets/images/art02.jpg"
+                class="img-fluid rounded-start h-mobile h-lg-desktop w-100 object-cover" alt="...">
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <div class="card-body px-md-6 py-6 d-flex flex-column h-100">
                 <small class="text-muted mb-2 mt-2 mt-md-6 d-block">Joanne</small>
                 <h5 class="card-title mb-6 fs-3 fw-bold">海洋波度</h5>
                 <p class="card-text fs-6">海洋的奧秘向我們揭示了深不可測的一面，它的深度——反映了我們的恐懼、同時也吸引著我們。</p>
-                <button
-                  class="btn btn-outline-black rounded-0 d-block ms-auto mt-auto more-button py-2 px-12">MORE</button>
+                <button class="btn btn-outline-black d-block ms-auto mt-auto more-button py-2 px-12">MORE</button>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col-md-6 border-end-md border-start-md border-black border-bottom border-2 border-md-1">
+      <div class="col-lg-6 border-end-lg border-start-lg border-bottom border-2 border-lg-1">
         <div class="card">
-          <div class="row g-0 flex-md-row-reverse">
-            <div class="col-md-6">
-              <img src="./assets/images/art02.jpg" class="img-fluid rounded-start" alt="...">
+          <div class="row g-0 flex-lg-row-reverse">
+            <div class="col-lg-6">
+              <img src="./assets/images/art21.jpg"
+                class="img-fluid rounded-start h-mobile h-lg-desktop w-100 object-cover" alt="...">
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <div class="card-body px-md-6 py-6 d-flex flex-column h-100">
                 <small class="text-muted mb-2 mt-2 mt-md-6 d-block">Michael</small>
                 <h5 class="card-title mb-6 fs-3 fw-bold">我家窗前的鳥</h5>
                 <p class="card-text fs-6">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
-                <button
-                  class="btn btn-outline-black rounded-0 d-block ms-auto mt-auto more-button py-2 px-12">MORE</button>
+                <button class="btn btn-outline-black d-block ms-auto mt-auto more-button py-2 px-12">MORE</button>
               </div>
             </div>
           </div>
@@ -122,50 +142,59 @@
 
 
   <!-- 市場排行榜 -->
-  <div class="container ranking">
-    <div class="position-relative pb-2 pb-md-4 border-bottom border-black mb-6 mb-md-12">
+  <div class="container ranking pb-10 pb-lg-20">
+    <div class="position-relative pb-2 pb-md-4 border-bottom mb-6 mb-md-12">
       <h2 class="">Ranking <span class="fw-bold">市價排行榜</span></h2>
       <button class="btn more-button button-title py-2 px-12 fs-nft">more</button>
 
     </div>
 
 
-    <div class="row row-cols-1 row-cols-lg-3 ">
-      <div class="col ">
-        <div class="card h-100 border border-black rounded-0">
-          <div class="number fs-2 fw-bold font-paytone">1</div>
-          <img src="./assets/images/art04.jpg" class="card-img-top" alt="...">
-          <div class="card-body border-top border-black">
-            <h5 class="card-title mb-0 ">
-              散步遇到的女人
-            </h5>
-          </div>
-          <div class="card-footer d-flex justify-content-between bg-white border-black">
-            <small class="text-black">Zoe Jiang</small>
-            <small>
-              <img src="./assets/images/ethereum.svg" alt="" width="9" height="17" class="me-2">300</small>
+    <div class="row row-cols-1 row-cols-lg-3 gy-4">
+
+
+      <div class="col">
+        <div class="card h-100 border d-flex flex-row d-lg-block">
+
+          <a href="" class="d-flex flex-row d-lg-block text-black img-hover">
+            <div class="number fs-2 fw-bold paytone">1</div>
+            <img src="./assets/images/art04.jpg" class="card-img-top ranking-card-img" alt="...">
+            <button
+              class="btn btn-outline-black d-block ms-auto mt-auto more-button py-2 px-12 d-none bg-white">MORE</button>
+          </a>
+
+          <div class="flex-grow-1">
+            <div class="card-body border-top-lg ">
+              <h5 class="card-title mb-0 fs-nft ">
+                散步遇到的女人
+              </h5>
+            </div>
+            <div class="card-footer d-flex justify-content-between bg-white border-black">
+              <small class="text-black fs-6" style="line-height: 17px;">Zoe Jiang</small>
+              <small>
+                <img src="./assets/images/ethereum.svg" alt="" width="9" height="17" class="me-2">300</small>
+            </div>
           </div>
         </div>
       </div>
-
       <div class="col">
-        <div class="card h-100 border border-black rounded-0 d-flex flex-row d-lg-block">
+        <div class="card h-100 border d-flex flex-row d-lg-block">
 
           <a href="" class="d-flex flex-row d-lg-block text-black img-hover">
-            <div class="number fs-2 fw-bold font-paytone">2</div>
-            <img src="./assets/images/art05.jpg" class="card-img-top " alt="...">
+            <div class="number fs-2 fw-bold paytone">2</div>
+            <img src="./assets/images/art05.jpg" class="card-img-top ranking-card-img" alt="...">
             <button
-              class="btn btn-outline-black rounded-0 d-block ms-auto mt-auto more-button py-2 px-12 d-none">MORE</button>
+              class="btn btn-outline-black d-block ms-auto mt-auto more-button py-2 px-12 d-none bg-white">MORE</button>
           </a>
 
-          <div>
-            <div class="card-body border-top border-black">
-              <h5 class="card-title mb-0 ">
+          <div class="flex-grow-1">
+            <div class="card-body border-top-lg ">
+              <h5 class="card-title mb-0 fs-nft ">
                 爆炸頭的母親
               </h5>
             </div>
             <div class="card-footer d-flex justify-content-between bg-white border-black">
-              <small class="text-black">Yui</small>
+              <small class="text-black fs-6" style="line-height: 17px;">Yui</small>
               <small>
                 <img src="./assets/images/ethereum.svg" alt="" width="9" height="17" class="me-2">300</small>
             </div>
@@ -174,19 +203,450 @@
       </div>
 
       <div class="col">
-        <div class="card h-100 border border-black rounded-0">
-          <div class="number fs-2 fw-bold font-paytone">3</div>
-          <img src="./assets/images/art06.jpg" class="card-img-top" alt="...">
-          <div class="card-body border-top border-black">
-            <h5 class="card-title mb-0 ">
-              夏天的時候
-            </h5>
+        <div class="card h-100 border d-flex flex-row d-lg-block">
+
+          <a href="" class="d-flex flex-row d-lg-block text-black img-hover">
+            <div class="number fs-2 fw-bold paytone">3</div>
+            <img src="./assets/images/art06.jpg" class="card-img-top ranking-card-img" alt="...">
+            <button
+              class="btn btn-outline-black d-block ms-auto mt-auto more-button py-2 px-12 d-none bg-white">MORE</button>
+          </a>
+
+          <div class="flex-grow-1">
+            <div class="card-body border-top-lg ">
+              <h5 class="card-title mb-0 fs-nft ">
+                夏天的時候
+              </h5>
+            </div>
+            <div class="card-footer d-flex justify-content-between bg-white border-black">
+              <small class="text-black fs-6" style="line-height: 17px;">Bug Lin</small>
+              <small>
+                <img src="./assets/images/ethereum.svg" alt="" width="9" height="17" class="me-2">300</small>
+            </div>
           </div>
-          <div class="card-footer d-flex justify-content-between bg-white border-black">
-            <small class="text-black">Bug Lin</small>
-            <small>
-              <img src="./assets/images/ethereum.svg" alt="" width="9" height="17" class="me-2">300</small>
+        </div>
+      </div>
+
+      <!-- 小卡片 -->
+      <div class="col">
+        <div class="card h-100 border d-flex flex-row">
+
+          <a href="" class="d-flex flex-row text-black ">
+            <div class="number-s fs-2 fw-bold paytone">4</div>
+            <div class="img-hover-s">
+              <img src="./assets/images/art13.jpg" class="card-img-top ranking-card-img-s" alt="...">
+            </div>
+          </a>
+
+          <div class="flex-grow-1">
+            <div class="card-body">
+              <h5 class="card-title mb-0 fs-nft ">
+                追求者送我的花
+              </h5>
+            </div>
+            <div class="card-footer d-flex justify-content-between bg-white border-black">
+              <small class="text-black fs-6" style="line-height: 17px;">Michael</small>
+              <small>
+                <img src="./assets/images/ethereum.svg" alt="" width="9" height="17" class="me-2">300</small>
+            </div>
           </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 border d-flex flex-row">
+
+          <a href="" class="d-flex flex-row text-black">
+            <div class="number-s fs-2 fw-bold paytone">5</div>
+            <div class="img-hover-s">
+              <img src="./assets/images/art07.jpg" class="card-img-top ranking-card-img-s" alt="...">
+            </div>
+          </a>
+
+          <div class="flex-grow-1">
+            <div class="card-body">
+              <h5 class="card-title mb-0 fs-nft ">
+                今天釣到的魚
+              </h5>
+            </div>
+            <div class="card-footer d-flex justify-content-between bg-white border-black">
+              <small class="text-black fs-6" style="line-height: 17px;">Wei JJ</small>
+              <small>
+                <img src="./assets/images/ethereum.svg" alt="" width="9" height="17" class="me-2">300</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 border d-flex flex-row">
+
+          <a href="" class="d-flex flex-row text-black ">
+            <div class="number-s fs-2 fw-bold paytone">6</div>
+            <div class="img-hover-s">
+              <img src="./assets/images/art08.jpg" class="card-img-top ranking-card-img-s" alt="...">
+            </div>
+          </a>
+
+          <div class="flex-grow-1">
+            <div class="card-body">
+              <h5 class="card-title mb-0 fs-nft ">
+                人生中的貓咪們
+              </h5>
+            </div>
+            <div class="card-footer d-flex justify-content-between bg-white border-black">
+              <small class="text-black fs-6" style="line-height: 17px;">Even Lai</small>
+              <small>
+                <img src="./assets/images/ethereum.svg" alt="" width="9" height="17" class="me-2">300</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+  <!-- 熱門藝術佳 -->
+  <div class="container pb-10 pb-md-20">
+    <div class="position-relative pb-2 pb-md-4 border-bottom mb-6 mb-md-12">
+      <h2 class="">Artist <span class="fw-bold">熱門藝術家</span></h2>
+      <button class="btn more-button button-title py-2 px-12 fs-nft">more</button>
+
+    </div>
+
+    <div class="row">
+      <div class="col">
+
+        <!-- Slider main container -->
+        <!-- 如果使用bgi會導致slide需要不同的大小，就會導致水平軸出現偏移 -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper mb-6 mb-lg-12">
+            <div class="swiper-slide d-flex flex-wrap">
+              <div class="position-relative">
+                <img src="./assets/images/artist01.jpg" />
+                <h4 class="swiper-slide-artist text-white fs-2 fs-lg-artist fw-bold">Antony Wu</h4>
+                <button
+                  class="btn btn-outline-black d-block ms-auto mt-auto more-button py-2 px-12 swiper-slide-btn">MORE</button>
+              </div>
+
+              <p class="swiper-slide-words p-6 ">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+            </div>
+
+            <div class="swiper-slide d-flex flex-wrap">
+              <div class="position-relative">
+                <img src="./assets/images/artist02.jpg" />
+                <h4 class="swiper-slide-artist text-white fs-2 fs-lg-artist fw-bold">Antony Wu</h4>
+                <button
+                  class="btn btn-outline-black d-block ms-auto mt-auto more-button py-2 px-12 swiper-slide-btn">MORE</button>
+              </div>
+
+              <p class="swiper-slide-words p-6 ">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+            </div>
+
+            <div class="swiper-slide d-flex flex-wrap">
+              <div class="position-relative">
+                <img src="./assets/images/artist03.jpg" />
+                <h4 class="swiper-slide-artist text-white fs-2 fs-lg-artist fw-bold">Antony Wu</h4>
+                <button
+                  class="btn btn-outline-black d-block ms-auto mt-auto more-button py-2 px-12 swiper-slide-btn">MORE</button>
+              </div>
+
+              <p class="swiper-slide-words p-6 ">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+            </div>
+            <div class="swiper-slide d-flex flex-wrap">
+              <div class="position-relative">
+                <img src="./assets/images/artist04.jpg" />
+                <h4 class="swiper-slide-artist text-white fs-2 fs-lg-artist fw-bold">Antony Wu</h4>
+                <button
+                  class="btn btn-outline-black d-block ms-auto mt-auto more-button py-2 px-12 swiper-slide-btn">MORE</button>
+              </div>
+
+              <p class="swiper-slide-words p-6 ">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Artwork -->
+  <div class="artwork container p-10 pb-md-20">
+
+    <div class="position-relative pb-2 pb-md-4 border-bottom mb-6 mb-md-12">
+      <h2 class="">Artwork <span class="fw-bold d-none d-lg-block">最新藝術品</span></h2>
+      <button class="btn more-button button-title py-2 px-12 fs-nft">more</button>
+
+    </div>
+
+
+    <div class="row" data-masonry='{"percentPosition": true }'>
+      <!-- 1-1 -->
+      <div class="col-lg-3 col-6 mb-12">
+        <div class="card border-0">
+          <!-- 用來包裹可以絕對定位的內容 -->
+          <div class="p-2 p-lg-6 bg-white img-hover">
+            <!-- hover可以產生filter -->
+            <img src="./assets/images/art09.jpg" class="card-img-top" alt="...">
+            <!-- hover 出現有白框的內容，為了讓白寬與周圍有距離，可以使用padding 的容器 -->
+            <div class="p-4 hover-content-container d-none w-100">
+              <!-- 主要的白框內容 跟白匡本身 -->
+              <div class=" hover-content text-white w-100">
+                <p class="fs-6 mb-4 d-none d-xxl-block">唯一想擁有的，唯一不可以擁有的</p>
+                <small class="d-none d-xxl-inline-block">
+                  <img src="./assets/images/ethereum.svg" alt="" width="9" height="17" class="me-2">300</small>
+                <button
+                  class="btn btn-outline-black more-button py-xxl-2 py-1 px-xxl-12 px-6 d-none bg-white mt-auto ms-auto">MORE</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="card-body bg-primary border-bottom-md py-2 py-lg-4">
+            <h5 class="card-title fs-6 fw-bold mb-0">區塊戀-他的私生活</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1-2 -->
+      <div class="col-lg-3 col-6 mb-12">
+        <div class="card border-0">
+          <!-- 用來包裹可以絕對定位的內容 -->
+          <div class="p-2 p-lg-6 bg-white img-hover">
+            <!-- hover可以產生filter -->
+            <img src="./assets/images/art10.jpg" class="card-img-top" alt="...">
+            <!-- hover 出現有白框的內容，為了讓白寬與周圍有距離，可以使用padding 的容器 -->
+            <div class="p-4 hover-content-container d-none w-100">
+              <!-- 主要的白框內容 跟白匡本身 -->
+              <div class=" hover-content text-white w-100">
+                <p class="fs-6 mb-4 d-none d-xxl-block">唯一想擁有的，唯一不可以擁有的</p>
+                <small class="d-none d-xxl-inline-block">
+                  <img src="./assets/images/ethereum.svg" alt="" width="9" height="17" class="me-2">300</small>
+                <button
+                  class="btn btn-outline-black more-button py-xxl-2 py-1 px-xxl-12 px-6 d-none bg-white mt-auto ms-auto">MORE</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="card-body bg-primary border-bottom-md py-2 py-lg-4">
+            <h5 class="card-title fs-6 fw-bold mb-0">夏娃的醜聞</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1-3 -->
+      <div class="col-lg-3 col-6 mb-12">
+        <div class="card border-0">
+          <!-- 用來包裹可以絕對定位的內容 -->
+          <div class="p-2 p-lg-6 bg-white img-hover">
+            <!-- hover可以產生filter -->
+            <img src="./assets/images/art02.jpg" class="card-img-top" alt="...">
+            <!-- hover 出現有白框的內容，為了讓白寬與周圍有距離，可以使用padding 的容器 -->
+            <div class="p-4 hover-content-container d-none w-100">
+              <!-- 主要的白框內容 跟白匡本身 -->
+              <div class=" hover-content text-white w-100">
+                <p class="fs-6 mb-4 d-none d-xxl-block">唯一想擁有的，唯一不可以擁有的</p>
+                <small class="d-none d-xxl-inline-block">
+                  <img src="./assets/images/ethereum.svg" alt="" width="9" height="17" class="me-2">300</small>
+                <button
+                  class="btn btn-outline-black more-button py-xxl-2 py-1 px-xxl-12 px-6 d-none bg-white mt-auto ms-auto">MORE</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="card-body bg-primary border-bottom-md py-2 py-lg-4">
+            <h5 class="card-title fs-6 fw-bold mb-0">藍色啤酒海</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1-4 -->
+      <div class="col-lg-3 col-6 mb-12">
+        <div class="card border-0">
+          <!-- 用來包裹可以絕對定位的內容 -->
+          <div class="p-2 p-lg-6 bg-white img-hover">
+            <!-- hover可以產生filter -->
+            <img src="./assets/images/art11.jpg" class="card-img-top" alt="...">
+            <!-- hover 出現有白框的內容，為了讓白寬與周圍有距離，可以使用padding 的容器 -->
+            <div class="p-4 hover-content-container d-none w-100">
+              <!-- 主要的白框內容 跟白匡本身 -->
+              <div class=" hover-content text-white w-100">
+                <p class="fs-6 mb-4 d-none d-xxl-block">唯一想擁有的，唯一不可以擁有的</p>
+                <small class="d-none d-xxl-inline-block">
+                  <img src="./assets/images/ethereum.svg" alt="" width="9" height="17" class="me-2">300</small>
+                <button
+                  class="btn btn-outline-black more-button py-xxl-2 py-1 px-xxl-12 px-6 d-none bg-white mt-auto ms-auto">MORE</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="card-body bg-primary border-bottom-md py-2 py-lg-4">
+            <h5 class="card-title fs-6 fw-bold mb-0">沒有人愛我</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2-1 -->
+      <div class="col-lg-3 col-6 mb-12">
+        <div class="card border-0">
+          <!-- 用來包裹可以絕對定位的內容 -->
+          <div class="p-2 p-lg-6 bg-white img-hover">
+            <!-- hover可以產生filter -->
+            <img src="./assets/images/art12.jpg" class="card-img-top" alt="...">
+            <!-- hover 出現有白框的內容，為了讓白寬與周圍有距離，可以使用padding 的容器 -->
+            <div class="p-4 hover-content-container d-none w-100">
+              <!-- 主要的白框內容 跟白匡本身 -->
+              <div class=" hover-content text-white w-100">
+                <p class="fs-6 mb-4 d-none d-xxl-block">唯一想擁有的，唯一不可以擁有的</p>
+                <small class="d-none d-xxl-inline-block">
+                  <img src="./assets/images/ethereum.svg" alt="" width="9" height="17" class="me-2">300</small>
+                <button
+                  class="btn btn-outline-black more-button py-xxl-2 py-1 px-xxl-12 px-6 d-none bg-white mt-auto ms-auto">MORE</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="card-body bg-primary border-bottom-md py-2 py-lg-4">
+            <h5 class="card-title fs-6 fw-bold mb-0">不哭不哭眼淚是珍珠</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2-2 -->
+      <div class="col-lg-3 col-6 mb-12">
+        <div class="card border-0">
+          <!-- 用來包裹可以絕對定位的內容 -->
+          <div class="p-2 p-lg-6 bg-white img-hover">
+            <!-- hover可以產生filter -->
+            <img src="./assets/images/art03.jpg" class="card-img-top" alt="...">
+            <!-- hover 出現有白框的內容，為了讓白寬與周圍有距離，可以使用padding 的容器 -->
+            <div class="p-4 hover-content-container d-none w-100">
+              <!-- 主要的白框內容 跟白匡本身 -->
+              <div class=" hover-content text-white w-100">
+                <p class="fs-6 mb-4 d-none d-xxl-block">唯一想擁有的，唯一不可以擁有的</p>
+                <small class="d-none d-xxl-inline-block">
+                  <img src="./assets/images/ethereum.svg" alt="" width="9" height="17" class="me-2">300</small>
+                <button
+                  class="btn btn-outline-black more-button py-xxl-2 py-1 px-xxl-12 px-6 d-none bg-white mt-auto ms-auto">MORE</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="card-body bg-primary border-bottom-md py-2 py-lg-4">
+            <h5 class="card-title fs-6 fw-bold mb-0">十分鐘就到</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2-3 -->
+      <div class="col-lg-3 col-6 mb-12">
+        <div class="card border-0">
+          <!-- 用來包裹可以絕對定位的內容 -->
+          <div class="p-2 p-lg-6 bg-white img-hover">
+            <!-- hover可以產生filter -->
+            <img src="./assets/images/art04.jpg" class="card-img-top" alt="...">
+            <!-- hover 出現有白框的內容，為了讓白寬與周圍有距離，可以使用padding 的容器 -->
+            <div class="p-4 hover-content-container d-none w-100">
+              <!-- 主要的白框內容 跟白匡本身 -->
+              <div class=" hover-content text-white w-100">
+                <p class="fs-6 mb-4 d-none d-xxl-block">唯一想擁有的，唯一不可以擁有的</p>
+                <small class="d-none d-xxl-inline-block">
+                  <img src="./assets/images/ethereum.svg" alt="" width="9" height="17" class="me-2">300</small>
+                <button
+                  class="btn btn-outline-black more-button py-xxl-2 py-1 px-xxl-12 px-6 d-none bg-white mt-auto ms-auto">MORE</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="card-body bg-primary border-bottom-md py-2 py-lg-4">
+            <h5 class="card-title fs-6 fw-bold mb-0">我這樣有美嗎</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2-4 -->
+      <div class="col-lg-3 col-6 mb-12">
+        <div class="card border-0">
+          <!-- 用來包裹可以絕對定位的內容 -->
+          <div class="p-2 p-lg-6 bg-white img-hover">
+            <!-- hover可以產生filter -->
+            <img src="./assets/images/art27.jpg" class="card-img-top" alt="...">
+            <!-- hover 出現有白框的內容，為了讓白寬與周圍有距離，可以使用padding 的容器 -->
+            <div class="p-4 hover-content-container d-none w-100">
+              <!-- 主要的白框內容 跟白匡本身 -->
+              <div class=" hover-content text-white w-100">
+                <p class="fs-6 mb-4 d-none d-xxl-block">唯一想擁有的，唯一不可以擁有的</p>
+                <small class="d-none d-xxl-inline-block">
+                  <img src="./assets/images/ethereum.svg" alt="" width="9" height="17" class="me-2">300</small>
+                <button
+                  class="btn btn-outline-black more-button py-xxl-2 py-1 px-xxl-12 px-6 d-none bg-white mt-auto ms-auto">MORE</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="card-body bg-primary border-bottom-md py-2 py-lg-4">
+            <h5 class="card-title fs-6 fw-bold mb-0">我真的受傷了</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <!-- 創建並出售你的藝術品 -->
+  <div class="border-bottom">
+    <h3 class="fs-2 fs-lg-lg text-center fw-bold mb-4">Join Us</h3>
+    <p class="fw-bold fs-5 text-center">創建並出售你的藝術品</p>
+    <hr size="6" style="color:black; opacity:1" class="mt-10 mb-2">
+  </div>
+
+  <div class="container py-12 py-lg-20">
+    <div class="row">
+      <div class="col-lg-3 mb-10 mb-lg-0 ">
+        <div class="text-center">
+          <i class="fas fa-wallet fs-4 text-button fs-lg mb-4"></i>
+          <p class="fw-bold fs-nft mb-4">設置你的錢包</p>
+          <p class="fs-6">設置好您選擇的錢包後<br>點擊右上角的錢包圖標進行連接</p>
+
+
+        </div>
+      </div>
+
+      <div class="col-lg-3 mb-10 mb-lg-0">
+        <div class="text-center">
+          <i class="fas fa-pencil-ruler fs-4 text-button fs-lg mb-4"></i>
+          <p class="fw-bold fs-nft mb-4">創建您的主頁</p>
+          <p class="fs-6">註冊成為會員，編輯您的資料<br>讓大家了解你</p>
+
+
+        </div>
+      </div>
+
+      <div class="col-lg-3 mb-10 mb-lg-0">
+        <div class="text-center">
+          <i class="fas fa-icons fs-4 text-button fs-lg mb-4"></i>
+          <p class="fw-bold fs-nft mb-4">添加你的 NFT</p>
+          <p class="fs-6">上傳你的作品<br>添加標題和描述</p>
+
+
+        </div>
+      </div>
+
+      <div class="col-lg-3 mb-10 mb-lg-0">
+        <div class="text-center">
+          <i class="fas fa-tags fs-4 text-button fs-lg mb-4"></i>
+          <p class="fw-bold fs-nft mb-4">列出它們出售</p>
+          <p class="fs-6">選擇出售 NFT 的方式<br>並設定價格，等待有緣人</p>
+
+
         </div>
       </div>
     </div>
@@ -195,13 +655,19 @@
 
 
 
+
+
 </div>
 
-    <footer class="footer bg-primary border-top  border-black">
+    <footer class="footer bg-primary border-top ">
       <hr size="6"  style="color:black; opacity:1" class="mt-2 mb-0">
       <p class="fs-6 text-center py-6 ">© ART NFT. All Rights Reserved</p>
     </footer>
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
