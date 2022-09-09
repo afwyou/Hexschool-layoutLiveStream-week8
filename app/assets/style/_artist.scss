@@ -12,9 +12,11 @@
 .nav-tabs{
   border-bottom: 1px solid black;
   .nav-link{
+    color: #808080;
     border-bottom: 1px solid black;
   }
   .nav-link.active{
+    color: black;
    border-left: 1px solid black;
    border-top: 1px solid black;
    border-right: 1px solid black;
